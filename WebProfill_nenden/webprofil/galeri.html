@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Website Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Profil Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section Home -->
+        <section id="home">
+            <h2>Home</h2>
+            <p>Selamat datang di halaman profil kami!</p>
+        </section>
+
+        <!-- Section Profil -->
+        <section id="profil">
+            <h2>Profil</h2>
+            <p>Di sini ada beberapa foto bersama cinta-cintaku.</p>
+        </section>
+
+        <!-- Section Galeri -->
+        <section id="galeri">
+            <h2>Galeri</h2>
+            <p>Berikut adalah beberapa foto bersama teman.</p>
+            <h3>Galeri Foto</h3>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="ftotmn.jpg" alt="Foto 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="ftobr4.jpg" alt="Foto 2">
+                </div>
+                <style>
+                    .gallery {
+                        display: flex;
+                        gap: 20px;
+                    }
+                    .gallery-item img {
+                        width: 350px; 
+                        height: 250px; 
+                        object-fit: cover; 
+                        border-radius: 8px; 
+                    }
+                </style>
+        </section>
+
+        <!-- Section Kontak -->
+        <section id="kontak">
+            <h2>Kontak</h2>
+            <li><strong>Email:</strong> nendensari05@gmail.com</li>
+                <li><strong>Phone:</strong> +62 838-9313-5606</li>
+                <li><strong>Alamat:</strong> Link. Cigondang No.02 RT.010/RW.004 Kec. Cikerai</li>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Profil Website Sederhana</p>
+    </footer>
+</body>
+</html>

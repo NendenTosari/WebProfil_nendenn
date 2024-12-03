@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Profile Website</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #514352;
+            background-color: #fac9f3;
+        }
+        header {
+            background-color: #eeade5;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #ddbdd6;
+            border-radius: 5px;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .profile-image {
+            border-radius: 50%;
+            width: 185px;
+            height: 200px;
+            object-fit: cover;
+            box-shadow: 0 2px 5px rgba(238, 167, 217, 0.2);
+        }
+         /* Profile Section Styles */
+        .container {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .profile-image {
+            border-radius: 50%;
+            width: 250px;
+            height: 265px;
+            object-fit: cover;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .biodata ul {
+            list-style-type: none;
+            padding: 0;
+            line-height: 1.8;
+        }
+
+        /* Contact Icons */
+        .contact-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .contact-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #c0adbd;
+            font-weight: bold;
+        }
+
+        /* Gallery Styles */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .gallery img {
+            width: 250px;
+            height: 275px;
+            object-fit: cover;
+            border-radius: 2px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.10);
+        }
+ /* Contact Form Styles */
+ form table {
+
+            width: 100%;
+            margin-top: 1rem;
+        }
+        table td {
+
+            padding: 0.5rem;
+        }
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 0.7rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #f7a9df;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #fcaef5;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Profile</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profil">Profile</a></li>
+                <li><a href="#galeri">Gallery</a></li>
+                <li><a href="#kontak">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <h2>About This Website</h2>
+                <p>Selamat datang di Website profil saya yang sederhana. Di sini, Anda akan menemukan informasi tentang saya, isi galeri saya, dan cara untuk menghubungi saya. Jangan ragu untuk menjelajahi setiap bagian, dan jangan ragu untuk menghubungi saya jika Anda ingin terhubung dengan saya.</p>
+            </div>
+        </section>
+
+        <section id="profil" class="container">
+            <h2>Profile</h2>
+            <div class="profile-section">
+                <img src="ftok.jpg" alt="Profile Picture" class="profile-image">
+                <div class="biodata">
+                    <h3>Biodata</h3>
+                    <ul>
+                        <li><strong>Nama:</strong> Nenden Tosari</li>
+                        <li><strong>Tempat. Tgl Lahir:</strong> Cilegon, 03 mei 2005</li>
+                        <li><strong>Jenis Kelamin:</strong> Perempuan</li>
+                        <li><strong>Usia:</strong> 19 tahun</li>
+                        <li><strong>Agama:</strong> Islam</li>
+                        <li><strong>Profesi:</strong> Developer Web</li>
+                        <li><strong>Pendidikan:</strong> S1 Sistem Informasi</li>
+                        <li><strong>Hobi:</strong> Menonton, Memasak dan Traveling</li>
+                        <li><strong>Skills:</strong> HTML, CSS, JavaScript, PHP, React.js</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h3>Contact Information</h3>
+            <ul style="list-style-type: none; padding: 0; line-height: 1.8;">
+                <li><strong>Email:</strong> nendensari05@gmail.com</li>
+                <li><strong>Phone:</strong> +62 838-9313-5606</li>
+                <li><strong>Alamat:</strong> Link. Cigondang No.02 RT.010/RW.004 Kec. Cikerai</li>
+            </ul>
+            <div class="contact-links">
+                <a href="https://wa.me/083893135606" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" width="30" height="30"> WhatsApp
+                </a>
+
+                <a href="https://www.instagram.com/ndtsry?igsh=M2ZzNGJrZmJmbG1y" target="_blank">
+                    <img src="https://th.bing.com/th/id/OIP.5kfepkzG4frnKAVCXiR81wHaHa?w=3000&h=3000&rs=1&pid=ImgDetMain"
+                     alt="Instagram Logo" width="30" height="30"> Instagram
+                </a>
+
+                <a href="https://www.tiktok.com/@03.05zyx?_t=8rJD989kAKr&_r=1" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Tiktok-icon-black.png" alt="TikTok Logo" width="30" height="30"> TikTok
+                </a>
+                </a>
+            </div>
+        </section>
+
+        <section id="galeri" class="container">
+            <h2>Gallery</h2>
+            <p>Berikut sekilas galeri saya.</p>
+            <div class="gallery">
+                <img src="akuu.jpg" alt="Image 1">
+                <img src="ftoy.jpg" alt="Image 2">
+                <img src="ftom.jpg" alt="Image 3">
+                <img src="ftob.jpg" alt="Image 4">
+                <img src="ftod.jpg" alt="Image 5">
+                <img src="ftop.jpg" alt="Image 6">
+            </div>
+        </section>
+
+        <section id="kontak" class="container">
+            <h2>Contact Form</h2>
+            <p>Jika anda ingin meninggalkan pesan, silahkan isi formulir di bawah ini:</p>
+            <form action="#">
+                <table>
+                    <tr>
+                        <td>Nama:</td>
+                        <td><input type="text" name="nama" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td>Pesan:</td>
+                        <td><input type="text" name="pesan" required></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Submit"></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Simple Profile Website - All rights reserved</p>
+    </footer>
+</body>
+</html>
